@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/maybemath
+# catalog-date 2007-03-09 22:25:45 +0100
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-maybemath
 Version:	20070309
 Release:	1
@@ -49,6 +55,7 @@ if the expression is italicised.
 %doc %{_texmfdistdir}/doc/latex/maybemath/README
 %doc %{_texmfdistdir}/doc/latex/maybemath/maybemath.pdf
 %doc %{_texmfdistdir}/doc/latex/maybemath/maybemath.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -59,3 +66,5 @@ if the expression is italicised.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
