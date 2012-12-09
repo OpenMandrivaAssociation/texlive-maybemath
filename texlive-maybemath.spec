@@ -56,3 +56,17 @@ if the expression is italicised.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20070309-2
++ Revision: 753831
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20070309-1
++ Revision: 718978
+- texlive-maybemath
+- texlive-maybemath
+- texlive-maybemath
+- texlive-maybemath
+
