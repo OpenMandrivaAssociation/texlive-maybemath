@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-maybemath
 Version:	20070309
-Release:	6
+Release:	7
 Summary:	Make math bold or italic according to context
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/maybemath
