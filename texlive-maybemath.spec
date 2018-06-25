@@ -5,7 +5,7 @@
 # catalog-license lppl
 # catalog-version undef
 Name:		texlive-maybemath
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	Make math bold or italic according to context
 Group:		Publishing
