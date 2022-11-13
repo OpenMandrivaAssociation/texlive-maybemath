@@ -1,18 +1,12 @@
-# revision 15878
-# category Package
-# catalog-ctan /macros/latex/contrib/maybemath
-# catalog-date 2007-03-09 22:25:45 +0100
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-maybemath
-Version:	20190228
+Version:	15878
 Release:	1
 Summary:	Make math bold or italic according to context
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/maybemath
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/maybemath.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/maybemath.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/maybemath.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/maybemath.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -33,12 +27,12 @@ expression will be italicised if the surrounding text is.
 if the expression is italicised.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -49,24 +43,10 @@ if the expression is italicised.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20070309-2
-+ Revision: 753831
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20070309-1
-+ Revision: 718978
-- texlive-maybemath
-- texlive-maybemath
-- texlive-maybemath
-- texlive-maybemath
-
