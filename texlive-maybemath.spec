@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	Make math bold or italic according to context
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/maybemath
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/maybemath
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/maybemath.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/maybemath.doc.r%{version}.tar.xz
